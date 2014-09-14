@@ -1,7 +1,7 @@
 <div class="jumbotron center">
-<h1>Go Do It</h1>
+<h1>Bunny Pins!</h1>
 <% if user_signed_in? %>
-	# do something
+	<%= link_to "Go to your bunny pins!", pins_path, class: "btn btn-default btn-lg" %>
 <% else %>
 <p>
 	<%= link_to "Log In", new_user_session_path, class: "btn btn-default btn-lg" %>
